@@ -1,0 +1,119 @@
+<html>
+  <head>
+    {% set title = "Shadoukita" %}
+    {% set desc = "My personal homepage" %}
+    {% set path = "/" %}
+    {% include "components/_head.html" %}
+    <link href="/static/css/lights.css" type="text/css" rel="stylesheet">
+  </head>
+  <body class="dark-theme github">
+    <div class="fullscreen">
+      <div class="background" style="background-image: url('/static/images/background.jpg');"></div>
+      <ul class="lightrope" id="lightrope">{% for _ in range(50) %}<li></li>{% endfor %}</ul>
+      <div class="center-object">
+        <div class="container">
+          <section class="me unset">
+            <div class="avatar-container">
+              <img
+                draggable="false" class="image-title"
+                src="/static/images/profile.jpg" id="discord-avatar"
+              >
+              <div id="discord-status-circle" style="background-color: rgb(237, 66, 69);"></div>
+            </div>
+            <div class="unset">
+              <h1 class="title github dropshadow-small">Shadoukita</h1>
+              <p class="undertitle runescape dropshadow-medium" style="color: rgb(237, 66, 69);">
+                Developing a new Website...
+              </p>
+              <div id="discord-status">
+                <p class="undertitle runescape dropshadow-medium" id="discord-status-name"></p>
+              </div>
+              <div id="discord-spotify">
+                <a id="spotify-url" target="_blank">
+                  <img id="spotify-image" src="/static/images/blank.png" draggable="false">
+                  <p class="undertitle runescape dropshadow-medium" id="spotify-title"></p>
+                </a>
+              </div>
+            </div>
+          </section>
+          <div class="buttons">
+            <a href="#information" class="btn sun-flower-dropshadow white-text animation hover">About Me</span>
+            <a href="/discord" class="btn discord-dropshadow white-text animation hover" target="_blank">Discord</a>
+            <a href="/github" class="btn github-dropshadow white-text animation hover" target="_blank">GitHub</a>
+            <a href="/reddit" class="btn reddit-dropshadow white-text animation hover" target="_blank">Reddit</a>
+            <a href="/twitter" class="btn twitter-dropshadow white-text animation hover" target="_blank">Twitter</a>
+            <a href="/youtube" class="btn youtube-dropshadow white-text animation hover" target="_blank">Youtube</a>
+            </div>
+            <div class="buttons">
+            <a href="/steam" class="btn github-dropshadow white-text animation hover" target="_blank">Steam</a>
+            <a href="/twitch" class="btn twitch-dropshadow white-text animation hover">Twitch</a>
+            <a href="/instagram" class="btn instagram-dropshadow white-text animation hover">Instagram</a>
+            <a href="/amazon/" class="btn amazon-dropshadow white-text animation hover">Wishlist</a>
+            <a href="https://www.shizume.tk/" class="btn discord-dropshadow white-text animation hover" target="_blank">Shizume</a>
+            <a href="/onlyfans" class="btn twitter-dropshadow white-text animation hover" target="_blank">OnlyFans</a>
+            </div>
+         </div>
+         <div class="container-2">
+            <section class="me unset">
+               <div class="unset">
+                 <p class="undertitle runescape dropshadow-medium">Friends</p>
+               </div>
+            </section>
+            <div class="buttons">
+                <a href="https://shunaya.tk" class="btn twitch-dropshadow white-text animation hover" target="_blank">ShunayaTTV</a>
+               <a href="https://gremagol.xyz" class="btn sun-flower-dropshadow white-text animation hover" target="_blank">Gremagol</a><br>
+               <a href="https://cybercube21.de" class="btn steam-dropshadow white-text animation hover" target="_blank">Cybercube21</a>
+            </div>
+         </div>
+
+      <a href="#information">
+        <div id="arrow" class="arrow bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
+            <path d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <section class="container" id="information">
+
+      <div class="box-container">
+        <h1 class="title emerald-text"><i class="emoji katarina-heart"></i> Information:</h1>
+        <div class="info-container"><p>
+          Hello, my name is <span class="emerald-text">Shadou</span>.
+          I'm a Hobby-Developer that spends time coding my Discord Bot <span class="emerald-text">Shizume</span> (Which is currently not in maintenance).
+          At the moment I'm not really coding due to lack of motivation and time.
+          <p>
+          Been coding since <span class="emerald-text">2019</span>,
+          I taught it myself and I am not a professional but looking forward to learn more.
+          <p>
+          Current coding languages I know right now are <span class="emerald-text">HTML, JavaScript, Python</span> and <span class="emerald-text">Java</span>.
+          <p>
+          Besides the coding I am a <span class="youtube-text">Gamer</span> and I do Stream <span class="sun-flower-text">League of Legends</span> sometimes on my <span class="twitch-text">Twitch</span> Channel also I do
+          <span class="sun-flower-text">Midlane</span> and <span class="sun-flower-text">Jungle</span> Coachings for 30€ per hour. I main <span class="youtube-text">Katarina</span> since season 1 and peaked <span class="twitter-text">Diamond 2</span> with around <span class="emerald-text">60%</span> Winrate.
+        </p></div>
+      </p>
+    </p>
+      </div>
+
+      <div class="box-container">
+        <h1 class="title emerald-text"><i class="emoji alex-noted"></i> Projects:</h1>
+        <div class="info-container">
+          {% for g in data.projects_list %}
+            <p><a href="{{ g.url }}" target="_blank">{{ g.name }}</a>, {{ g.desc }}</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="box-container">
+        <h1 class="title emerald-text"><i class="emoji alex-nerd"></i> Work status:</h1>
+        <div class="info-container">
+          <p>
+            I am a IT Systems Electronics Engineer Trainee for a big distribution system operator company in germany since August 2022.
+          </p>
+        </div>
+      </div>
+    </section>
+    {% include "components/_footer.html" %}
+  </body>
+</html>
